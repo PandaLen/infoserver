@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from './pages/homepage';
 import Groups from './pages/groups';
 import GroupDetail from './pages/groupdetail';
+import Soloists from './pages/soloists';
+import SoloistDetail from './pages/soloistdetail';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
 import { Navigation } from './components/navigation';
@@ -26,6 +28,8 @@ function App() {
             <Route path="/" element={<Homepage />} />
             <Route path="/groups" element={<Groups/>}/>
             <Route path="/groups/:id" element={<GroupDetail/>}/>
+            <Route path="/soloists" element={<Soloists/>}/>
+            <Route path="/soloists/:id" element={<SoloistDetail/>}/>
           </Routes>
         </main>
         <Footer copyright={{projectName: "Ročníkový projekt IT2", projectAuthor: "Lukáš a Růženka"}}/>
